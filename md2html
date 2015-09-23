@@ -15,11 +15,9 @@ conn.request('POST', '/markdown/raw', markdown, headers=headers)
 response = conn.getresponse()
 
 html = """
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
